@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - CSS Academy | Locations in Old & New Washermenpet</title>
+    <title>Institutional Access - CSS Academy | Chennai Campuses</title>
     <meta name="description"
-        content="Visit CSS Academy in Old Washermenpet or New Washermenpet. Get expert career counseling and enroll in professional courses. Call 09551475177.">
+        content="Connect with CSS Academy. Visit our premier campuses in Old Washermenpet and New Washermenpet. Experience elite career counseling and institutional-grade training.">
     
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,82 +19,88 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-link" style="font-size: 19px; font-weight: 600; opacity: 1;">CSS Academy</a>
-            <ul class="nav-menu" style="display: flex; gap: 30px; list-style: none;">
+            <a href="index.html" class="nav-link" style="display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; opacity: 1; letter-spacing: -0.02em;">
+                <img src="assets/logo.png" alt="CSS Academy" style="height: 32px; filter: brightness(0) invert(1);">
+                <span>CSS ACADEMY</span>
+            </a>
+            <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="courses.html" class="nav-link">Courses</a></li>
                 <li><a href="reviews.html" class="nav-link">Reviews</a></li>
-                <li><a href="contact.html" class="nav-link active" style="opacity: 1;">Contact</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero" style="background: #f5f5f7; padding-bottom: 60px;">
-        <div class="hero-content">
-            <h1 style="color: #1d1d1f; margin-bottom: 15px;">Connect with us.</h1>
-            <h2 style="color: #1d1d1f; opacity: 0.8; font-weight: 500;">Visit our campuses in the heart of Chennai.</h2>
+    <header class="hero" style="min-height: 50vh;">
+        <div class="hero-content reveal">
+            <h1 class="animate-slide-up">Institutional <span class="text-accent">Access.</span></h1>
+            <p class="animate-fade-in" style="margin-top: 30px; font-size: 24px; max-width: 800px; margin-left: auto; margin-right: auto; color: var(--color-text-muted);">
+                Visit our premier campuses in the heart of North Chennai.
+            </p>
         </div>
     </header>
 
-    <section class="section">
+    <section class="section" style="background: var(--color-primary-soft);">
         <div class="container">
-            <div class="grid grid-2" style="gap: 50px; align-items: start;">
+            <div class="grid grid-2" style="gap: 80px; align-items: start;">
                 
                 <div class="reveal">
                     <!-- Head Office -->
-                    <div class="glass-card mb-lg" style="border-left: 4px solid var(--color-primary);">
-                        <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent); font-weight: 700;">Head Office</span>
-                        <h3 style="margin: 15px 0;">Old Washermenpet</h3>
-                        <p style="font-size: 17px; line-height: 1.6; color: #1d1d1f;">
+                    <div class="glass-card mb-lg" style="padding: 40px; border-left: 4px solid var(--color-accent);">
+                        <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-accent); font-weight: 700;">Head Office</span>
+                        <h3 style="margin: 20px 0; color: white; font-size: 28px;">Old Washermenpet</h3>
+                        <p style="font-size: 18px; line-height: 1.6; color: var(--color-text-muted);">
                             No. 436, TH Road,<br>
                             Old Washermenpet, Chennai - 21.<br>
-                            <strong>Landmark:</strong> Next to Sir Theagaraya College
+                            <span style="color: var(--color-blue); font-size: 14px; font-weight: 600;">Landmark: Next to Sir Theagaraya College</span>
                         </p>
-                        <div style="margin-top: 20px;">
-                            <a href="tel:09551475177" style="color: var(--color-primary); font-weight: 600; text-decoration: none; font-size: 18px;">📞 09551475177</a>
+                        <div style="margin-top: 30px; display: flex; align-items: center; gap: 15px;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(212, 175, 55, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-accent);">📞</div>
+                            <a href="tel:09551475177" style="color: white; font-weight: 700; font-size: 20px; text-decoration: none; letter-spacing: -0.01em;">09551475177</a>
                         </div>
                     </div>
 
                     <!-- Branch Office -->
-                    <div class="glass-card mb-lg" style="border-left: 4px solid var(--color-accent);">
-                        <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent); font-weight: 700;">Branch Office</span>
-                        <h3 style="margin: 15px 0;">New Washermenpet</h3>
-                        <p style="font-size: 17px; line-height: 1.6; color: #1d1d1f;">
-                            New Washermenpet Branch,<br>
+                    <div class="glass-card" style="padding: 40px; border-left: 4px solid var(--color-blue);">
+                        <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-blue); font-weight: 700;">Branch Office</span>
+                        <h3 style="margin: 20px 0; color: white; font-size: 28px;">New Washermenpet</h3>
+                        <p style="font-size: 18px; line-height: 1.6; color: var(--color-text-muted);">
+                            New Washermenpet Campus,<br>
                             Chennai - 81.<br>
-                            <strong>Landmark:</strong> Next to Cake Square
+                            <span style="color: var(--color-blue); font-size: 14px; font-weight: 600;">Landmark: Next to Cake Square</span>
                         </p>
-                    </div>
-
-                    <div class="glass-card" style="padding: 0; overflow: hidden; border: none; height: 300px; background: #f5f5f7; display: flex; align-items: center; justify-content: center; font-size: 40px;">
-                        📍 Google Maps
                     </div>
                 </div>
 
                 <!-- Contact Form -->
-                <div class="glass-card revelation" style="padding: 40px; background: #ffffff; box-shadow: 0 20px 40px rgba(0,0,0,0.08); border: none;">
-                    <h3 style="margin-bottom: 25px; font-size: 28px;">Send a message</h3>
-                    <form>
-                        <div style="margin-bottom: 20px;">
-                            <input type="text" placeholder="Full Name" style="width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #d2d2d7; outline: none; transition: border-color 0.2s;">
+                <div class="glass-card reveal" style="padding: 60px; background: var(--color-primary); border-color: rgba(255, 255, 255, 0.05);">
+                    <h3 style="margin-bottom: 40px; font-size: 32px; color: white;">Request <span class="text-accent">Consultation.</span></h3>
+                    <form data-lead-form>
+                        <div class="form-group" style="margin-bottom: 30px;">
+                            <input type="text" name="name" required class="form-input" placeholder="Full Name" style="background: rgba(255, 255, 255, 0.03); border-color: rgba(255, 255, 255, 0.1); color: white; padding: 20px;">
+                            <div class="form-error"></div>
                         </div>
-                        <div style="margin-bottom: 20px;">
-                            <input type="tel" placeholder="Mobile Number" style="width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #d2d2d7; outline: none;">
+                        <div class="form-group" style="margin-bottom: 30px;">
+                            <input type="tel" name="phone" required class="form-input" placeholder="Mobile Number" style="background: rgba(255, 255, 255, 0.03); border-color: rgba(255, 255, 255, 0.1); color: white; padding: 20px;">
+                            <div class="form-error"></div>
                         </div>
-                        <div style="margin-bottom: 20px;">
-                            <select style="width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #d2d2d7; outline: none; background: white;">
-                                <option>Select Course</option>
-                                <option>Tally + GST</option>
-                                <option>Python Programming</option>
-                                <option>Full Stack Web</option>
-                                <option>Data Analytics</option>
+                        <div class="form-group" style="margin-bottom: 30px;">
+                            <select name="course" required class="form-select" style="background: rgba(255, 255, 255, 0.03); border-color: rgba(255, 255, 255, 0.1); color: white; padding: 20px; height: 65px;">
+                                <option value="" style="background: var(--color-primary);">Select Academic Path</option>
+                                <option value="tally" style="background: var(--color-primary);">Professional Accounting (Tally)</option>
+                                <option value="python" style="background: var(--color-primary);">Software Engineering (Python)</option>
+                                <option value="fullstack" style="background: var(--color-primary);">Full Stack Web Development</option>
+                                <option value="analytics" style="background: var(--color-primary);">Data Analytics Mastery</option>
                             </select>
+                            <div class="form-error"></div>
                         </div>
-                        <div style="margin-bottom: 30px;">
-                            <textarea placeholder="Your Message" style="width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #d2d2d7; outline: none; min-height: 120px;"></textarea>
+                        <div class="form-group" style="margin-bottom: 40px;">
+                            <textarea name="message" class="form-textarea" placeholder="Your Legacy Goals" style="background: rgba(255, 255, 255, 0.03); border-color: rgba(255, 255, 255, 0.1); color: white; padding: 20px; min-height: 150px;"></textarea>
+                            <div class="form-error"></div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Inquiry</button>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; padding: 25px;">Submit Inquiry</button>
                     </form>
                 </div>
 
@@ -101,9 +108,13 @@
         </div>
     </section>
 
-    <footer style="padding: 60px 0; background: #ffffff; border-top: 1px solid var(--color-border);">
+    <footer style="padding: 100px 0; background: var(--color-primary-soft); border-top: 1px solid var(--color-border);">
         <div class="container text-center">
-            <p style="font-size: 14px;">&copy; 2026 CSS Academy. All rights reserved.</p>
+            <a href="index.html" class="nav-link" style="display: inline-flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 700; color: white; margin-bottom: 30px;">
+                <img src="assets/logo.png" alt="CSS Academy" style="height: 40px; filter: brightness(0) invert(1);">
+                <span>CSS ACADEMY</span>
+            </a>
+            <p style="font-size: 14px; color: var(--color-text-muted);">&copy; 2026 CSS Academy - Clintax Software Solution. All rights reserved.</p>
         </div>
     </footer>
 

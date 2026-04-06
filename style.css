@@ -4,50 +4,52 @@
    PROFESSIONAL COLOR SYSTEM
    ============================================ */
 :root {
-    /* Apple-Style Premium Palette */
+    /* Institutional Premium Palette - Obsidian & Gold */
     --color-primary: #000000;
-    --color-primary-soft: #1d1d1f;
+    --color-primary-soft: #0a0a0b;
     --color-secondary: #ffffff;
     --color-bg-light: #f5f5f7;
     --color-bg-white: #ffffff;
     
-    /* Apple Accent Colors */
-    --color-accent: #0066cc; /* Apple Blue */
-    --color-accent-hover: #0077ed;
-    --color-gold: #b69d74; /* Refined Gold */
+    /* Luxury Accents */
+    --color-accent: #d4af37; /* Metallic Gold */
+    --color-accent-hover: #c5a027;
+    --color-gold: #b69d74;
     --color-gold-light: #eaddca;
+    --color-blue: #007aff; /* Electric Institutional Blue */
     
     /* Semantic Colors */
-    --color-text: #1d1d1f;
+    --color-text: #ffffff;
+    --color-text-dark: #1d1d1f;
     --color-text-secondary: #86868b;
-    --color-text-on-dark: #f5f5f7;
-    --color-border: rgba(0, 0, 0, 0.1);
-    --color-border-light: rgba(255, 255, 255, 0.1);
+    --color-text-muted: rgba(255, 255, 255, 0.6);
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-border-light: rgba(255, 255, 255, 0.05);
     
-    /* Glassmorphism */
-    --glass-bg: rgba(255, 255, 255, 0.8);
-    --glass-bg-dark: rgba(29, 29, 31, 0.8);
-    --glass-blur: 20px;
-    --glass-border: rgba(255, 255, 255, 0.3);
+    /* Glassmorphism - Dark Premium */
+    --glass-bg: rgba(10, 10, 11, 0.8);
+    --glass-bg-dark: rgba(0, 0, 0, 0.9);
+    --glass-blur: 25px;
+    --glass-border: rgba(212, 175, 55, 0.2);
     
-    /* Typography - SF Pro Style */
-    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    /* Typography */
+    --font-primary: 'Inter', -apple-system, sans-serif;
     --font-display: 'Outfit', 'Inter', sans-serif;
     
-    /* Apple-Style Shadows */
-    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-    --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
-    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.2);
+    --shadow-md: 0 8px 16px rgba(0,0,0,0.3);
+    --shadow-lg: 0 20px 40px rgba(0,0,0,0.4);
+    --shadow-gold: 0 4px 14px 0 rgba(212, 175, 55, 0.3);
 
     /* Spacing & Sizing */
     --radius-sm: 8px;
     --radius-md: 12px;
-    --radius-lg: 18px;
-    --radius-xl: 24px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
     --radius-full: 980px;
     
-    --transition-apple: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    --transition-apple: all 0.6s cubic-bezier(0.28, 0.11, 0.32, 1);
     --transition-fast: all 0.2s ease;
 }
 
@@ -68,10 +70,10 @@ html {
 body {
     font-family: var(--font-primary);
     color: var(--color-text);
-    background-color: var(--color-bg-white);
-    line-height: 1.47059;
+    background-color: var(--color-primary);
+    line-height: 1.6;
     font-weight: 400;
-    letter-spacing: -0.022em;
+    letter-spacing: -0.015em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
@@ -109,23 +111,21 @@ select {
    ULTRA-PREMIUM TYPOGRAPHY
    ============================================ */
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-primary);
-    color: var(--color-primary);
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: -0.015em;
+    font-family: var(--font-display);
+    color: var(--color-secondary);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
 }
 
 h1 {
-    font-size: clamp(40px, 8vw, 72px);
-    font-weight: 700;
-    letter-spacing: -0.025em;
+    font-size: clamp(56px, 10vw, 120px);
+    font-weight: 800;
 }
 
 h2 {
-    font-size: clamp(32px, 5vw, 48px);
-    font-weight: 600;
-    letter-spacing: -0.02em;
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 700;
 }
 
 p {
@@ -399,11 +399,14 @@ p {
 
 .btn-primary {
     background-color: var(--color-accent);
-    color: #ffffff;
+    color: var(--color-primary);
+    font-weight: 600;
+    box-shadow: var(--shadow-gold);
 }
 
 .btn-primary:hover {
     background-color: var(--color-accent-hover);
+    transform: translateY(-2px) scale(1.02);
 }
 
 .btn-lg {
@@ -681,18 +684,50 @@ p {
 }
 
 /* ============================================
-   ULTRA-PREMIUM HERO
+   ULTRA-PREMIUM HERO - CINEMATIC
    ============================================ */
 .hero {
-    padding-top: 150px;
-    padding-bottom: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background: #ffffff;
+    background: var(--color-primary);
+    position: relative;
     overflow: hidden;
+    padding: 100px 0;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, var(--color-primary) 80%);
 }
 
 .hero-content {
-    max-width: 980px;
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 22px;
 }

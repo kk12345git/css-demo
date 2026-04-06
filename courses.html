@@ -4,211 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses & Pricing - CSS Academy | Best Training in Old Washermenpet Chennai</title>
+    <title>Curriculum of Mastery - CSS Academy | Elite Technical Training</title>
     <meta name="description"
-        content="Explore professional courses at CSS Academy. Programming, Designing, Data Analytics, Full Stack, Multimedia, Accounting, and AI-ML-DS with final industry pricing.">
+        content="Explore the elite curriculum at CSS Academy. From Professional Accounting to Advanced Software Engineering, master the skills that define the industry standard.">
     
-    <!-- SEO / GEO Meta Tags -->
-    <meta name="keywords" content="computer coaching center, tally with gst course chennai, python training old washermenpet, best full stack development course, css academy pricing">
-
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Course List Schema for AI & Search -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "Course",
-            "name": "Programming Masterclass",
-            "description": "C, C++, Java, C#, Python, J2EE, Dot Net",
-            "provider": {
-              "@type": "Organization",
-              "name": "CSS Academy",
-              "sameAs": "https://cssacademy.co.in"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "Course",
-            "name": "Audit & Accounting (Tally + GST)",
-            "description": "GST Taxation, Vouchers, BRS - P/L led by professional auditors",
-            "provider": {
-              "@type": "Organization",
-              "name": "CSS Academy"
-            }
-          }
-        }
-      ]
-    }
-    </script>
 </head>
 
 <body class="courses-page">
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-link" style="font-size: 19px; font-weight: 600; opacity: 1;">CSS Academy</a>
-            <ul class="nav-menu" style="display: flex; gap: 30px; list-style: none;">
+            <a href="index.html" class="nav-link" style="display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; opacity: 1; letter-spacing: -0.02em;">
+                <img src="assets/logo.png" alt="CSS Academy" style="height: 32px; filter: brightness(0) invert(1);">
+                <span>CSS ACADEMY</span>
+            </a>
+            <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="courses.html" class="nav-link active" style="opacity: 1;">Courses</a></li>
+                <li><a href="courses.html" class="nav-link active">Courses</a></li>
                 <li><a href="reviews.html" class="nav-link">Reviews</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero" style="background: #f5f5f7; padding-bottom: 60px;">
-        <div class="hero-content">
-            <h1 style="color: #1d1d1f; margin-bottom: 15px;">Elite Programs.</h1>
-            <h2 style="color: #1d1d1f; opacity: 0.8; font-weight: 500;">Transparent industry pricing for future masters.</h2>
-            <p style="margin-top: 30px; margin-left: auto; margin-right: auto; max-width: 600px;">
-                Our curriculum is designed by auditors and senior engineers to ensure you are job-ready from day one.
+    <header class="hero" style="min-height: 60vh;">
+        <div class="hero-background">
+            <img src="assets/course-forge.png" alt="Institutional Background">
+        </div>
+        <div class="hero-content reveal">
+            <h1 class="animate-slide-up">Elite <span class="text-accent">Programs.</span></h1>
+            <p class="animate-fade-in" style="margin-top: 30px; font-size: 24px; max-width: 800px; margin-left: auto; margin-right: auto; color: var(--color-text-muted);">
+                A curriculum engineered for mastery. Transparent industry pricing for the next generation of leaders.
             </p>
         </div>
     </header>
 
-    <section class="section">
+    <section class="section" style="background: var(--color-primary-soft);">
         <div class="container">
-            <div class="grid grid-3" style="gap: 30px;">
+            <div class="grid grid-3 stagger-parent" style="gap: 40px;">
 
                 <!-- Programming -->
-                <div class="glass-card reveal">
-                    <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Development</span>
-                    <h2 style="margin: 10px 0; font-size: 28px;">Programming Masterclass</h2>
-                    <p style="font-size: 15px; margin-bottom: 20px;">C, C++, Java, C#, Python, J2EE, Dot Net</p>
-                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 20px;">
-                        <span style="display: block; font-size: 14px; color: var(--color-text-secondary);">Final Price</span>
-                        <span style="font-size: 32px; font-weight: 700; color: var(--color-primary);">₹17,000</span>
+                <div id="programming" class="glass-card stagger-item" style="padding: 40px; display: flex; flex-direction: column;">
+                    <span class="text-accent" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; font-weight: 700;">Development</span>
+                    <h2 style="margin: 20px 0; font-size: 32px; color: white;">Programming Masterclass</h2>
+                    <p style="font-size: 16px; color: var(--color-text-muted); margin-bottom: 30px;">C, C++, Java, C#, Python, J2EE, Dot Net. High-performance logic and scalable architecture.</p>
+                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+                        <div>
+                            <span style="display: block; font-size: 13px; color: var(--color-text-muted); text-transform: uppercase;">Standard Fee</span>
+                            <span style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -0.02em;">₹17,000</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-sm">Enroll</a>
                     </div>
-                    <a href="contact.html" class="btn btn-primary mt-md" style="width: 100%;">Enroll Now</a>
-                </div>
-
-                <!-- Designing -->
-                <div class="glass-card reveal">
-                    <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Creative</span>
-                    <h2 style="margin: 10px 0; font-size: 28px;">Graphic Designing</h2>
-                    <p style="font-size: 15px; margin-bottom: 20px;">Photoshop, Pagemaker, Coreldraw</p>
-                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 20px;">
-                        <span style="display: block; font-size: 14px; color: var(--color-text-secondary);">Final Price</span>
-                        <span style="font-size: 32px; font-weight: 700; color: var(--color-primary);">₹9,000</span>
-                    </div>
-                    <a href="contact.html" class="btn btn-primary mt-md" style="width: 100%;">Enroll Now</a>
-                </div>
-
-                <!-- Data Analytics -->
-                <div class="glass-card reveal">
-                    <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Intelligence</span>
-                    <h2 style="margin: 10px 0; font-size: 28px;">Data Analytics</h2>
-                    <p style="font-size: 15px; margin-bottom: 20px;">Power BI, Tableau, Advanced Excel</p>
-                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 20px;">
-                        <span style="display: block; font-size: 14px; color: var(--color-text-secondary);">Final Price</span>
-                        <span style="font-size: 32px; font-weight: 700; color: var(--color-primary);">₹18,000</span>
-                    </div>
-                    <a href="contact.html" class="btn btn-primary mt-md" style="width: 100%;">Enroll Now</a>
                 </div>
 
                 <!-- Full Stack -->
-                <div class="glass-card reveal">
-                    <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Engineering</span>
-                    <h2 style="margin: 10px 0; font-size: 28px;">Full Stack Web</h2>
-                    <p style="font-size: 15px; margin-bottom: 20px;">HTML5, CSS3, SQL, PHP, Node.js</p>
-                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 20px;">
-                        <span style="display: block; font-size: 14px; color: var(--color-text-secondary);">Final Price</span>
-                        <span style="font-size: 32px; font-weight: 700; color: var(--color-primary);">₹22,000</span>
+                <div id="fullstack" class="glass-card stagger-item" style="padding: 40px; border-color: var(--color-accent); display: flex; flex-direction: column;">
+                    <span class="text-accent" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; font-weight: 700;">Engineering</span>
+                    <h2 style="margin: 20px 0; font-size: 32px; color: white;">Full Stack Web</h2>
+                    <p style="font-size: 16px; color: var(--color-text-muted); margin-bottom: 30px;">Complete architectural mastery. HTML5, CSS3, SQL, PHP, Node.js, and Modern Deployment.</p>
+                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+                        <div>
+                            <span style="display: block; font-size: 13px; color: var(--color-text-muted); text-transform: uppercase;">Standard Fee</span>
+                            <span style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -0.02em;">₹22,000</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-sm">Enroll</a>
                     </div>
-                    <a href="contact.html" class="btn btn-primary mt-md" style="width: 100%;">Enroll Now</a>
-                </div>
-
-                <!-- Multimedia -->
-                <div class="glass-card reveal">
-                    <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Production</span>
-                    <h2 style="margin: 10px 0; font-size: 28px;">Multimedia Master</h2>
-                    <p style="font-size: 15px; margin-bottom: 20px;">Premiere, After Effects, Animate</p>
-                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 20px;">
-                        <span style="display: block; font-size: 14px; color: var(--color-text-secondary);">Final Price</span>
-                        <span style="font-size: 32px; font-weight: 700; color: var(--color-primary);">₹10,000</span>
-                    </div>
-                    <a href="contact.html" class="btn btn-primary mt-md" style="width: 100%;">Enroll Now</a>
-                </div>
-
-                <!-- Advanced Excel Masterclass -->
-                <div class="glass-card reveal">
-                    <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Professional</span>
-                    <h2 style="margin: 10px 0; font-size: 28px;">Excel Pro Masters</h2>
-                    <p style="font-size: 15px; margin-bottom: 20px;">Charts, Dashboards, Graphs & Macros</p>
-                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 20px;">
-                        <span style="display: block; font-size: 14px; color: var(--color-text-secondary);">Final Price</span>
-                        <span style="font-size: 32px; font-weight: 700; color: var(--color-primary);">₹19,000</span>
-                    </div>
-                    <a href="contact.html" class="btn btn-primary mt-md" style="width: 100%;">Enroll Now</a>
-                </div>
-
-                <!-- Web Codings -->
-                <div class="glass-card reveal">
-                    <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Frontend</span>
-                    <h2 style="margin: 10px 0; font-size: 28px;">Modern Web Coding</h2>
-                    <p style="font-size: 15px; margin-bottom: 20px;">React JS, Angular JS, Vue JS</p>
-                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 20px;">
-                        <span style="display: block; font-size: 14px; color: var(--color-text-secondary);">Final Price</span>
-                        <span style="font-size: 32px; font-weight: 700; color: var(--color-primary);">₹8,000</span>
-                    </div>
-                    <a href="contact.html" class="btn btn-primary mt-md" style="width: 100%;">Enroll Now</a>
                 </div>
 
                 <!-- Accounting -->
-                <div class="glass-card reveal">
-                    <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Finance</span>
-                    <h2 style="margin: 10px 0; font-size: 28px;">Audit & Accounting</h2>
-                    <p style="font-size: 15px; margin-bottom: 20px;">GST Taxation, Vouchers, BRS - P/L</p>
-                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 20px;">
-                        <span style="display: block; font-size: 14px; color: var(--color-text-secondary);">Final Price</span>
-                        <span style="font-size: 32px; font-weight: 700; color: var(--color-primary);">₹8,000</span>
+                <div id="tally" class="glass-card stagger-item" style="padding: 40px; display: flex; flex-direction: column;">
+                    <span class="text-accent" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; font-weight: 700;">Finance</span>
+                    <h2 style="margin: 20px 0; font-size: 32px; color: white;">Audit & Accounting</h2>
+                    <p style="font-size: 16px; color: var(--color-text-muted); margin-bottom: 30px;">Tally Prime with GST Excellence. BRS, Vouchers, and P/L led by professional auditors.</p>
+                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+                        <div>
+                            <span style="display: block; font-size: 13px; color: var(--color-text-muted); text-transform: uppercase;">Standard Fee</span>
+                            <span style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -0.02em;">₹8,000</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-sm">Enroll</a>
                     </div>
-                    <a href="contact.html" class="btn btn-primary mt-md" style="width: 100%;">Enroll Now</a>
                 </div>
 
-                <!-- AI ML DS -->
-                <div class="glass-card reveal">
-                    <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Future Tech</span>
-                    <h2 style="margin: 10px 0; font-size: 28px;">AI / ML / Data Science</h2>
-                    <p style="font-size: 15px; margin-bottom: 20px;">Data Science, Machine Learning, AI Implementation</p>
-                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 20px;">
-                        <span style="display: block; font-size: 14px; color: var(--color-text-secondary);">Flexible Pricing</span>
-                        <span style="font-size: 24px; font-weight: 600; color: var(--color-accent);">Book Counseling</span>
+                <!-- Data Analytics -->
+                <div class="glass-card stagger-item" style="padding: 40px; display: flex; flex-direction: column;">
+                    <span class="text-accent" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; font-weight: 700;">Intelligence</span>
+                    <h2 style="margin: 20px 0; font-size: 32px; color: white;">Data Analytics</h2>
+                    <p style="font-size: 16px; color: var(--color-text-muted); margin-bottom: 30px;">Power BI, Tableau, Advanced Excel. Transform raw data into institutional insight.</p>
+                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+                        <div>
+                            <span style="display: block; font-size: 13px; color: var(--color-text-muted); text-transform: uppercase;">Standard Fee</span>
+                            <span style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -0.02em;">₹18,000</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-sm">Enroll</a>
                     </div>
-                    <a href="contact.html" class="btn btn-primary mt-md" style="width: 100%;">Get Quote</a>
+                </div>
+
+                <!-- Modern Web Coding -->
+                <div class="glass-card stagger-item" style="padding: 40px; display: flex; flex-direction: column;">
+                    <span class="text-accent" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; font-weight: 700;">Frontend</span>
+                    <h2 style="margin: 20px 0; font-size: 32px; color: white;">Modern Frameworks</h2>
+                    <p style="font-size: 16px; color: var(--color-text-muted); margin-bottom: 30px;">React JS, Angular JS, Vue JS. Crafting high-end user experiences for the modern web.</p>
+                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+                        <div>
+                            <span style="display: block; font-size: 13px; color: var(--color-text-muted); text-transform: uppercase;">Standard Fee</span>
+                            <span style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -0.02em;">₹8,000</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-sm">Enroll</a>
+                    </div>
+                </div>
+
+                <!-- Future Tech -->
+                <div class="glass-card stagger-item" style="padding: 40px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%); display: flex; flex-direction: column;">
+                    <span class="text-accent" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; font-weight: 700;">Future Tech</span>
+                    <h2 style="margin: 20px 0; font-size: 32px; color: white;">AI / ML / Data Science</h2>
+                    <p style="font-size: 16px; color: var(--color-text-muted); margin-bottom: 30px;">Advanced Machine Learning and AI Implementation. The pinnacle of modern computation.</p>
+                    <div style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+                        <div>
+                            <span style="display: block; font-size: 13px; color: var(--color-text-muted); text-transform: uppercase;">Custom Quote</span>
+                            <span style="font-size: 28px; font-weight: 700; color: var(--color-accent); letter-spacing: -0.02em;">Contact Academy</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-outline btn-sm" style="color: white; border-color: white;">Inquire</a>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="section" style="background: #f5f5f7;">
-        <div class="container container-narrow text-center">
-            <h2 style="margin-bottom: 20px;">Bring this brochure, get exciting offers!!</h2>
-            <p>Visit our Old Washermenpet or New Washermenpet branch today to claim your discount.</p>
-            <div style="margin-top: 40px; display: flex; justify-content: center; gap: 20px;">
-                <a href="contact.html" class="btn btn-primary btn-lg">Find Branch Near Me</a>
-            </div>
+    <section class="section">
+        <div class="container container-narrow text-center reveal">
+            <h2 style="font-size: 48px; margin-bottom: 30px;">Secure Your <span class="text-accent">Legacy.</span></h2>
+            <p style="font-size: 20px; color: var(--color-text-muted); margin-bottom: 60px;">
+                Visit our Old Washermenpet or New Washermenpet branch today to claim a special enrollment bonus.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Begin Your Journey</a>
         </div>
     </section>
 
-    <footer style="padding: 60px 0; background: #ffffff; border-top: 1px solid var(--color-border);">
+    <footer style="padding: 100px 0; background: var(--color-primary-soft); border-top: 1px solid var(--color-border);">
         <div class="container text-center">
-            <p style="font-size: 14px;">&copy; 2026 CSS Academy - Clintax Software Solution Academy. All rights reserved.</p>
-            <p style="font-size: 12px; margin-top: 10px;">Best Computer Coaching Center in Old Washermenpet, Chennai.</p>
+            <a href="index.html" class="nav-link" style="display: inline-flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 700; color: white; margin-bottom: 30px;">
+                <img src="assets/logo.png" alt="CSS Academy" style="height: 40px; filter: brightness(0) invert(1);">
+                <span>CSS ACADEMY</span>
+            </a>
+            <p style="font-size: 14px; color: var(--color-text-muted);">&copy; 2026 CSS Academy - Clintax Software Solution. All rights reserved.</p>
+            <p style="font-size: 12px; color: var(--color-text-muted); margin-top: 10px;">The Institutional Standard for Computer Excellence in Chennai.</p>
         </div>
     </footer>
 

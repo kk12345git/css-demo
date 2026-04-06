@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - CSS Academy | Professional Excellence Since 2016</title>
+    <title>The Heritage of Excellence - CSS Academy | Since 2016</title>
     <meta name="description"
-        content="Discover the story of CSS Academy - Clintax Software Solution. Chennai's most trusted audit-based training institute for Tally and Engineering.">
+        content="Discover the story of CSS Academy - Clintax Software Solution. Chennai's most trusted institutional training for professional Tally, Python, and Engineering.">
     
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,10 +19,13 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-link" style="font-size: 19px; font-weight: 600; opacity: 1;">CSS Academy</a>
-            <ul class="nav-menu" style="display: flex; gap: 30px; list-style: none;">
+            <a href="index.html" class="nav-link" style="display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; opacity: 1; letter-spacing: -0.02em;">
+                <img src="assets/logo.png" alt="CSS Academy" style="height: 32px; filter: brightness(0) invert(1);">
+                <span>CSS ACADEMY</span>
+            </a>
+            <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link active" style="opacity: 1;">About</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
                 <li><a href="courses.html" class="nav-link">Courses</a></li>
                 <li><a href="reviews.html" class="nav-link">Reviews</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -29,52 +33,82 @@
         </div>
     </nav>
 
-    <header class="hero" style="background: #f5f5f7; padding-bottom: 60px;">
-        <div class="hero-content">
-            <h1 style="color: #1d1d1f; margin-bottom: 15px;">Our Story.</h1>
-            <h2 style="color: #1d1d1f; opacity: 0.8; font-weight: 500;">Building careers with audit-level precision.</h2>
+    <header class="hero" style="min-height: 50vh;">
+        <div class="hero-content reveal">
+            <h1 class="animate-slide-up">Our <span class="text-accent">Story.</span></h1>
+            <p class="animate-fade-in" style="margin-top: 30px; font-size: 24px; max-width: 800px; margin-left: auto; margin-right: auto; color: var(--color-text-muted);">
+                Building technical legacies with architectural precision since 2016.
+            </p>
         </div>
     </header>
 
-    <section class="section">
+    <section class="section" style="background: var(--color-primary-soft);">
         <div class="container">
-            <div class="grid grid-2 mb-xl" style="align-items: center; gap: 60px;">
+            <div class="grid grid-2" style="align-items: center; gap: 100px;">
                 <div class="reveal">
-                    <p style="font-size: 20px; line-height: 1.6; color: #1d1d1f; margin-bottom: 30px; font-weight: 500;">
-                        Founded in 2016, CSS - Clintax Software Solution Academy was established to bridge the gap between academic theory and industry reality.
+                    <h2 style="font-size: 48px; margin-bottom: 40px;">The Institutional <span class="text-accent">Origin.</span></h2>
+                    <p style="font-size: 20px; line-height: 1.6; color: var(--color-blue); margin-bottom: 30px; font-weight: 600;">
+                        Founded in 2016, CSS - Clintax Software Solution Academy was established to redefine technical education in Chennai.
                     </p>
-                    <p style="color: #86868b; line-height: 1.8; margin-bottom: 20px;">
-                        As a professional software solution firm, we realized that students were graduating with degrees but lacked the "implementation mindset" required by auditors and top-tier engineering firms.
+                    <p style="color: var(--color-text-muted); font-size: 18px; line-height: 1.8; margin-bottom: 30px;">
+                        As a professional software solution firm, we witnessed a recurring pattern: graduates possessed academic degrees but lacked the "implementation mindset" required for senior roles. 
                     </p>
-                    <p style="color: #86868b; line-height: 1.8;">
-                        Today, CSS Academy stands as a beacon of professional training in Chennai, having transformed over 500+ students into industry-ready professionals. Our unique "Audit-Based Learning" approach for Tally and GST has made us the preferred choice for aspiring accountants.
+                    <p style="color: var(--color-text-muted); font-size: 18px; line-height: 1.8;">
+                        CSS Academy was built as a "Forge" where students are treated as junior associates. Our unique "Audit-Based Learning" methodology for Tally and GST has become the benchmark for financial training in North Chennai.
                     </p>
                 </div>
-                <div class="glass-card reveal" style="background: #000; color: white; min-height: 350px; display: flex; align-items: center; justify-content: center; font-size: 80px;">
-                    🎯
-                </div>
-            </div>
-
-            <div class="grid grid-3" style="gap: 30px; margin-top: 80px;">
-                <div class="glass-card reveal">
-                    <h3 style="margin-bottom: 15px;">Elite Trainers</h3>
-                    <p style="color: #86868b;">Learn from senior developers and auditors who deal with real-world complexities every day.</p>
-                </div>
-                <div class="glass-card reveal">
-                    <h3 style="margin-bottom: 15px;">Practical First</h3>
-                    <p style="color: #86868b;">0% Theory, 100% Implementation. We focus on projects that actually matter to your recruiters.</p>
-                </div>
-                <div class="glass-card reveal">
-                    <h3 style="margin-bottom: 15px;">Placement Ready</h3>
-                    <p style="color: #86868b;">From resume architecting to technical interviews, we represent you to the industry.</p>
+                <div class="glass-card reveal card-3d" style="background: var(--color-primary); color: white; min-height: 500px; display: flex; flex-direction: column; justify-content: center; padding: 60px; border-color: var(--color-accent); position: relative; overflow: hidden;">
+                    <div style="font-size: 120px; opacity: 0.1; position: absolute; top: -20px; right: 20px;">🏛️</div>
+                    <h3 style="font-size: 40px; margin-bottom: 30px; position: relative; z-index: 2;">A Legacy in Numbers</h3>
+                    <div style="display: grid; gap: 40px; position: relative; z-index: 2;">
+                        <div>
+                            <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-accent);">Success Stories</span>
+                            <h4 style="font-size: 48px;">500+</h4>
+                        </div>
+                        <div>
+                            <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-accent);">Alumni Placement</span>
+                            <h4 style="font-size: 48px;">100%</h4>
+                        </div>
+                        <div>
+                            <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-accent);">Industry Partners</span>
+                            <h4 style="font-size: 48px;">50+</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer style="padding: 60px 0; background: #ffffff; border-top: 1px solid var(--color-border);">
+    <section class="section">
+        <div class="container text-center reveal">
+            <h2 style="margin-bottom: 80px;">The Pillars of <span class="text-accent">Excellence.</span></h2>
+            <div class="grid grid-3 stagger-parent">
+                <div class="glass-card stagger-item" style="padding: 50px;">
+                    <div style="font-size: 40px; margin-bottom: 30px;">👔</div>
+                    <h3 style="margin-bottom: 20px; color: white;">Elite Faculty</h3>
+                    <p style="color: var(--color-text-muted);">Taught by senior auditors and system architects with decades of collective experience.</p>
+                </div>
+                <div class="glass-card stagger-item" style="padding: 50px; border-color: var(--color-accent);">
+                    <div style="font-size: 40px; margin-bottom: 30px;">🛠️</div>
+                    <h3 style="margin-bottom: 20px; color: white;">Practical Forge</h3>
+                    <p style="color: var(--color-text-muted);">Zero theoretical fluff. Every session is a live implementation on industry-standard environments.</p>
+                </div>
+                <div class="glass-card stagger-item" style="padding: 50px;">
+                    <div style="font-size: 40px; margin-bottom: 30px;">🚀</div>
+                    <h3 style="margin-bottom: 20px; color: white;">Global Ready</h3>
+                    <p style="color: var(--color-text-muted);">Curriculum vetted by global tech partners to ensure parity with international standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 100px 0; background: var(--color-primary-soft); border-top: 1px solid var(--color-border);">
         <div class="container text-center">
-            <p style="font-size: 14px;">&copy; 2026 CSS Academy. All rights reserved.</p>
+            <a href="index.html" class="nav-link" style="display: inline-flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 700; color: white; margin-bottom: 30px;">
+                <img src="assets/logo.png" alt="CSS Academy" style="height: 40px; filter: brightness(0) invert(1);">
+                <span>CSS ACADEMY</span>
+            </a>
+            <p style="font-size: 14px; color: var(--color-text-muted);">&copy; 2026 CSS Academy - Clintax Software Solution. All rights reserved.</p>
         </div>
     </footer>
 

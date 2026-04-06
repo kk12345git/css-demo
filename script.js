@@ -230,6 +230,11 @@ class ScrollAnimations {
   }
 
   init() {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -241,19 +246,37 @@ class ScrollAnimations {
             children.forEach((child, index) => {
               setTimeout(() => {
                 child.classList.add('active');
-              }, index * 100);
+              }, index * 200);
             });
           }
         }
       });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    });
+    }, observerOptions);
 
     // Observe all reveal elements
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     document.querySelectorAll('.stagger-parent').forEach(el => observer.observe(el));
+
+    // Hero Parallax Effect
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const heroBg = document.querySelector('.hero-background img');
+      if (heroBg) {
+        heroBg.style.transform = `translateY(${scrolled * 0.4}px) scale(${1 + scrolled * 0.0005})`;
+      }
+
+      // Navbar transparency handling
+      const navbar = document.querySelector('.navbar');
+      if (navbar) {
+        if (scrolled > 100) {
+          navbar.style.background = 'rgba(0, 0, 0, 0.9)';
+          navbar.style.padding = '10px 0';
+        } else {
+          navbar.style.background = 'rgba(10, 10, 11, 0.8)';
+          navbar.style.padding = '20px 0';
+        }
+      }
+    });
   }
 }
 
