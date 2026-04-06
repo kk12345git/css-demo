@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Free Demo - CSS Academy | Try Before You Enroll</title>
+    <meta name="description"
+        content="Book a free demo class at CSS Academy. Experience our teaching methodology and expert trainers before enrollment.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="assets/logo.png" alt="CSS Academy Logo" style="height: 50px; width: auto;">
+                    <span class="font-serif text-gold" style="font-size: 1.5rem; letter-spacing: -0.02em;">CSS
+                        Academy</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="nav-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: auto; padding: 120px 0 80px;">
+        <div class="container container-narrow">
+            <div class="text-center mb-xl">
+                <h1 style="color: white; margin-bottom: 2rem;">Experience Your <span
+                        class="font-serif text-gold">Masterclass</span> <span class="text-accent">Debut</span></h1>
+                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); font-weight: 500;">
+                    Sample the pinnacle of educational excellence before commencing your journey.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="margin-top: -40px;">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+
+                <!-- Demo Benefits -->
+                <div class="reveal">
+                    <h2 style="margin-bottom: 2.5rem;">Why Attend Our <span class="font-serif text-gold">Elite</span>
+                        <span class="text-accent">Preview?</span>
+                    </h2>
+
+                    <div class="glass-card" style="margin-bottom: 1.5rem;">
+                        <div style="display: flex; gap: 1rem; align-items: start;">
+                            <div style="font-size: 2.5rem;">👨‍🏫</div>
+                            <div>
+                                <h4 style="margin-bottom: 0.5rem;">Meet Expert Trainers</h4>
+                                <p>Interact with our experienced faculty and understand their teaching approach</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="margin-bottom: 1.5rem;">
+                        <div style="display: flex; gap: 1rem; align-items: start;">
+                            <div style="font-size: 2.5rem;">📚</div>
+                            <div>
+                                <h4 style="margin-bottom: 0.5rem;">See Course Content</h4>
+                                <p>Get a preview of the curriculum and learning materials</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="margin-bottom: 1.5rem;">
+                        <div style="display: flex; gap: 1rem; align-items: start;">
+                            <div style="font-size: 2.5rem;">💻</div>
+                            <div>
+                                <h4 style="margin-bottom: 0.5rem;">Hands-On Experience</h4>
+                                <p>Try practical exercises and understand our project-based learning</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="margin-bottom: 1.5rem;">
+                        <div style="display: flex; gap: 1rem; align-items: start;">
+                            <div style="font-size: 2.5rem;">🎯</div>
+                            <div>
+                                <h4 style="margin-bottom: 0.5rem;">Career Guidance</h4>
+                                <p>Get personalized career roadmap and course recommendations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <div style="display: flex; gap: 1rem; align-items: start;">
+                            <div style="font-size: 2.5rem;">🏢</div>
+                            <div>
+                                <h4 style="margin-bottom: 0.5rem;">Visit Our Facility</h4>
+                                <p>See our modern classrooms and learning infrastructure</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card mt-lg"
+                        style="background: var(--gradient-accent); color: white; text-align: center;">
+                        <h3 style="color: white; margin-bottom: 0.5rem;">⚡ Limited Slots Available</h3>
+                        <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem;">Only 10 demo seats per batch. Book
+                            now!</p>
+                    </div>
+                </div>
+
+                <!-- Demo Booking Form -->
+                <div class="glass-card-strong reveal" style="padding: 2.5rem; position: sticky; top: 100px;">
+                    <h3 style="margin-bottom: 1.5rem; text-align: center;">Book Your Free Demo</h3>
+
+                    <form data-lead-form>
+                        <div class="form-group">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" name="name" class="form-input" placeholder="Enter your name" required>
+                            <div class="form-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="tel" name="phone" class="form-input" placeholder="10-digit mobile number"
+                                required>
+                            <div class="form-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email (Optional)</label>
+                            <input type="email" name="email" class="form-input" placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Course Interested *</label>
+                            <select name="course" class="form-select" required>
+                                <option value="">Select a course</option>
+                                <option value="tally">Tally + GST</option>
+                                <option value="python">Python Programming</option>
+                                <option value="java">Java Development</option>
+                                <option value="office">MS Office</option>
+                                <option value="english">Spoken English</option>
+                                <option value="job-skills">Job Ready Skills</option>
+                            </select>
+                            <div class="form-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Preferred Demo Date *</label>
+                            <input type="date" name="demo_date" class="form-input" required>
+                            <div class="form-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Preferred Time *</label>
+                            <select name="demo_time" class="form-select" required>
+                                <option value="">Select time slot</option>
+                                <option value="morning">Morning (10 AM - 12 PM)</option>
+                                <option value="afternoon">Afternoon (2 PM - 4 PM)</option>
+                                <option value="evening">Evening (5 PM - 7 PM)</option>
+                            </select>
+                            <div class="form-error"></div>
+                        </div>
+
+                        <input type="hidden" name="city" value="Chennai">
+
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                            Book Free Demo Now
+                        </button>
+
+                        <p
+                            style="text-align: center; font-size: 0.875rem; color: var(--color-text-light); margin-top: 1rem;">
+                            ✓ No payment required • ✓ Instant confirmation
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Testimonials -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="text-center mb-xl reveal">
+                <h2>What Students Say About <span class="text-gradient">Our Demo</span></h2>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="glass-card reveal" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">😊</div>
+                    <p style="font-style: italic; margin-bottom: 1rem; color: var(--color-text-primary);">
+                        "The demo class was amazing! The trainer explained everything clearly. I enrolled immediately."
+                    </p>
+                    <h4>Ramesh K.</h4>
+                    <p style="color: var(--color-accent-teal); font-weight: 600; font-size: 0.875rem;">Python Course
+                        Student</p>
+                </div>
+
+                <div class="glass-card reveal" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎯</div>
+                    <p style="font-style: italic; margin-bottom: 1rem; color: var(--color-text-primary);">
+                        "I attended 3 demos at different institutes. CSS Academy was the best by far!"
+                    </p>
+                    <h4>Priya S.</h4>
+                    <p style="color: var(--color-accent-teal); font-weight: 600; font-size: 0.875rem;">Tally Course
+                        Student</p>
+                </div>
+
+                <div class="glass-card reveal" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">💯</div>
+                    <p style="font-style: italic; margin-bottom: 1rem; color: var(--color-text-primary);">
+                        "The demo gave me complete clarity about the course. Highly recommend attending it!"
+                    </p>
+                    <h4>Arun M.</h4>
+                    <p style="color: var(--color-accent-teal); font-weight: 600; font-size: 0.875rem;">Java Course
+                        Student</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--color-text-primary); color: white; padding: 3rem 0 1rem;">
+        <div class="container">
+            <div class="grid grid-3" style="margin-bottom: 2rem;">
+                <div>
+                    <h3 style="color: white; margin-bottom: 1rem;">CSS Academy</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Building careers through quality education.</p>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><a href="index.html"
+                                style="color: rgba(255,255,255,0.8);">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="courses.html"
+                                style="color: rgba(255,255,255,0.8);">Courses</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="contact.html"
+                                style="color: rgba(255,255,255,0.8);">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Contact</h4>
+                    <p style="color: rgba(255,255,255,0.8);">📍 Thiruvottiyur High Rd, Chennai<br>📞 09551475177<br>🌐
+                        cssacademy.co.in</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; text-align: center;">
+                <p style="color: rgba(255,255,255,0.6);">&copy; 2026 CSS Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.923 0-7.435 6.050-13.485 13.485-13.485s13.485 6.050 13.485 13.485c0 7.435-6.050 13.485-13.485 13.485zM21.960 18.828c-0.305-0.153-1.806-0.891-2.086-0.993s-0.484-0.153-0.688 0.153c-0.204 0.305-0.789 0.993-0.967 1.197s-0.356 0.229-0.661 0.076c-0.305-0.153-1.289-0.475-2.454-1.513-0.908-0.809-1.521-1.809-1.699-2.114s-0.018-0.471 0.134-0.623c0.138-0.137 0.305-0.356 0.458-0.534s0.204-0.305 0.305-0.509c0.102-0.204 0.051-0.382-0.025-0.534s-0.688-1.659-0.943-2.273c-0.248-0.598-0.499-0.517-0.688-0.526-0.178-0.009-0.382-0.011-0.586-0.011s-0.534 0.076-0.814 0.382c-0.28 0.305-1.069 1.044-1.069 2.548s1.094 2.956 1.247 3.16c0.153 0.204 2.152 3.286 5.213 4.608 0.728 0.314 1.296 0.502 1.739 0.643 0.731 0.232 1.397 0.199 1.924 0.121 0.587-0.088 1.806-0.738 2.061-1.451s0.255-1.323 0.178-1.451c-0.076-0.127-0.28-0.204-0.586-0.356z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
